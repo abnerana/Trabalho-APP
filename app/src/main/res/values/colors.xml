@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFundoBar">#458B74</color>
+    <color name="colorPrimary">#D3D3D3</color>
+    <color name="colorPrimaryDark">#778899</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fundo">#c0c0c0</color>
+    <color name="fundo_tela">#ffffcc</color>
+    <color name="textos">#2F4F4F</color>
+</resources>

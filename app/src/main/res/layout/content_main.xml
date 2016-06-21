@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.cotemig.abner.financas.MainActivity"
+    style="@style/tela_principal"
+    >
+
+    <Button
+        style="@style/botoes"
+        android:id="@+id/btn_inserir"
+        android:text="@string/str_btn_inserir"
+        android:onClick="inserir_despesa"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        style="@style/botoes"
+        android:id="@+id/btn_preferencias"
+        android:text="@string/str_tela_opcoes"
+        android:onClick="preferencias"
+        android:layout_below="@id/btn_inserir"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        style="@style/linear_inserir_h"
+        android:id="@+id/linear_data_principal"
+        android:layout_below="@id/btn_preferencias"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            style="@style/txt_view_linear"
+            android:text="Inserir o mes:"
+            android:id="@+id/txt_mes"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <EditText
+            style="@style/etd_txt_data"
+            android:id="@+id/mesRel"
+
+            />
+
+    <Button
+        style="@style/botoes_relatorio"
+        android:id="@+id/btn_realtorio"
+        android:text="@string/str_btn_relatorio"
+        android:onClick="relatorio_mes"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

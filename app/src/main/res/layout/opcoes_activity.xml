@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    style="@style/tela_opcoes"
+    >
+
+
+    <TextView
+        style="@style/txt_view"
+        android:text="Renda mensal:"
+        android:id="@+id/textoDesc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        style="@style/edt_txt"
+        android:inputType="numberDecimal"
+        android:id="@+id/edt_orc"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textoDesc"
+        />
+
+    <Button
+        style="@style/botoes"
+        android:id="@+id/botao_salva"
+        android:text="Salvar!"
+        android:onClick="salvar"
+        android:layout_below="@id/edt_orc"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        style="@style/botoes"
+        android:text="@string/str_btn_voltar"
+        android:layout_below="@id/botao_salva"
+        android:id="@+id/btn_voltar"
+        android:onClick="voltar"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

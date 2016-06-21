@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.cotemig.abner.financas.VerDespesas"
+    style="@style/tela_despesas"
+    >
+
+    <ListView
+        android:id="@+id/lista_despesas"
+        style="@style/lista"
+        android:layout_weight="20"
+        android:layout_height="500dp"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear_um"
+        android:layout_below="@id/lista_despesas"
+        >
+
+    <TextView
+        style="@style/txt_rel_valores"
+        android:text="@string/str_renda"
+        android:id="@+id/textRenda"
+        />
+
+        <TextView
+            style="@style/txt_rel_valores"
+            android:id="@+id/valRenda"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear_dois"
+        android:layout_below="@id/linear_um">
+
+        <TextView
+            style="@style/txt_rel_valores"
+            android:text="@string/str_gastos"
+            android:id="@+id/textDespMes"
+            />
+
+        <TextView
+            style="@style/txt_rel_valores"
+            android:id="@+id/valDespMes"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear_tres"
+        android:layout_below="@id/linear_dois">
+
+        <TextView
+            style="@style/txt_rel_valores"
+            android:text="@string/str_saldo"
+            android:id="@+id/textSaldo"
+
+            />
+
+        <TextView
+            style="@style/txt_rel_valores"
+            android:id="@+id/valSaldo"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/botoes"
+        android:text="@string/str_btn_voltar"
+        android:layout_below="@id/linear_tres"
+        android:id="@+id/btn_voltar"
+        android:layout_weight="1"
+        android:onClick="voltar"
+        />
+
+</LinearLayout>
+

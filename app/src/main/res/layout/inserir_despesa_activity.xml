@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.cotemig.abner.financas.InserirDespesa"
+    style="@style/tela_Inserir"
+    >
+
+
+    <TextView
+        style="@style/txt_view"
+        android:text="@string/str_label_descricao"
+        android:id="@+id/textDescricao"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        style="@style/edt_txt"
+        android:inputType="text"
+        android:id="@+id/descricaoDespesa"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textDescricao"
+        />
+
+    <TextView
+        style="@style/txt_view"
+        android:text="@string/str_label_valor"
+        android:id="@+id/textValor"
+        android:layout_below="@id/descricaoDespesa" />
+
+    <EditText
+        style="@style/edt_txt"
+        android:inputType="numberDecimal"
+        android:id="@+id/valorDespesa"
+        android:layout_below="@id/textValor"
+        />
+
+
+    <LinearLayout
+        style="@style/linear_inserir_h"
+        android:id="@+id/linear_data"
+        android:layout_below="@id/valorDespesa"
+        >
+
+        <TextView
+         style="@style/txt_view_linear"
+         android:text="@string/str_label_data"
+         android:id="@+id/textData"/>
+
+        <EditText
+            style="@style/etd_txt_data"
+            android:id="@+id/diaDespesa"
+            />
+
+        <TextView
+            style="@style/txt_view_linear"
+            android:id="@+id/txt_barra"
+            android:text="/"/>
+
+        <EditText
+            style="@style/etd_txt_data"
+            android:id="@+id/mesDespesa"
+            />
+
+        <TextView
+            style="@style/txt_view_linear"
+            android:id="@+id/txt_expl"
+            android:text="@string/str_modelo_data"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        style="@style/botoes"
+        android:id="@+id/botao_insere"
+        android:text="@string/str_btn_inserir_registro"
+        android:onClick="inserir_registro"
+        android:layout_below="@id/linear_data"
+        android:layout_marginTop="30dp"
+
+     />
+
+    <Button
+        style="@style/botoes"
+        android:text="@string/str_btn_voltar"
+        android:layout_below="@id/botao_insere"
+        android:id="@+id/btn_voltar"
+        android:onClick="voltar"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</LinearLayout>
